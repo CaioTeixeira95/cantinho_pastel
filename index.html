@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="css/style.css">
+
+<title>Cantinho do Pastel</title>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-xlarge w3-brown" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#googleMap" class="w3-bar-item w3-button">CONTATO</a>
+    <a href="#sobre" class="w3-bar-item w3-button">SOBRE</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-brown w3-xlarge">Aberto de quarta à domingo das 16:00hrs às 23:00hrs</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:100px; font-weight: bold; text-shadow: 2px 2px black;">CANTINHO DO PASTEL</span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-brown">Veja o nosso cardápio</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-brown w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-black">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasteis');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-yellow">Pastéis</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Mini');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-yellow">Mini Pastéis</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Porcoes');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-yellow">Porções</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-yellow">Bebidas</div>
+      </a>
+    </div>
+
+    <div id="Pasteis" class="w3-container menu w3-padding-32 w3-white">
+      
+      <h1 class="w3-grey w3-center w3-padding-16"><b>PASTÉIS TRADICIONAIS</b></h1>
+      
+      <h1><b>Carne</b> <span class="w3-right w3-tag w3-red w3-round">R$5,00</span></h1>
+      <hr>
+
+      <h1><b>Queijo</b> <span class="w3-right w3-tag w3-red w3-round">R$5,00</span></h1>
+      <hr>
+        
+      <h1><b>Palmito</b> <span class="w3-right w3-tag w3-red w3-round">R$5,00</span></h1>
+      <hr>
+
+      <h1><b>Pizza</b> <span class="w3-right w3-tag w3-red w3-round">R$5,00</span></h1>
+      <p class="w3-text-grey">Presunto, queijo ralado e orégano</p>
+      <hr>
+
+      <h1><b>Frango com Catupiry</b> <span class="w3-right w3-tag w3-red w3-round">R$5,00</span></h1>
+      <p class="w3-text-grey">Frango desfiado com catupiry</p>
+      <hr>
+
+      <h1><b>Pernil com Mussarela</b> <span class="w3-right w3-tag w3-red w3-round">R$5,00</span></h1>
+      <p class="w3-text-grey">Pernil desfiado com mussarela</p>
+      <hr>
+
+      <h1><b>Calabresa com Mussarela</b> <span class="w3-right w3-tag w3-red w3-round">R$5,00</span></h1>
+      <p class="w3-text-grey">Calabresa ralada com mussarela</p>
+      
+      <br>
+      <h1 class="w3-grey w3-center w3-padding-16"><b>PASTÉIS TRADICIONAIS DOCES</b></h1>
+      
+      <h1><b>Doce de Leite</b> <span class="w3-right w3-tag w3-red w3-round">R$5,50</span></h1>
+      <hr>
+
+      <h1><b>Chocolate</b> <span class="w3-right w3-tag w3-red w3-round">R$5,50</span></h1>
+      <hr>
+
+      <h1><b>Romeu e Julieta</b> <span class="w3-right w3-tag w3-red w3-round">R$5,50</span></h1>
+      <p class="w3-text-grey">Queijo com goiabada</p>
+    </div>
+
+    <div id="Mini" class="w3-container menu w3-padding-32 w3-white">
+      <h1 class="w3-grey w3-center w3-padding-16"><b>MINI PASTÉIS</b></h1>
+
+      <h1><b>Mini Pastéis 30 unidades</b> <span class="w3-right w3-tag w3-red w3-round">R$19,50</span></h1>
+      <p class="w3-text-grey">Escolha até 3 sabores</p>
+      
+      <br>
+      <h1 class="w3-grey w3-center w3-padding-16"><b>MINI PASTÉIS DOCES</b></h1>
+
+      <h1><b>Mini Pastés 12 unidades</b> <span class="w3-right w3-tag w3-red w3-round">à partir de R$48,00</span></h1>
+      <p class="w3-text-grey">Escolha até 3 sabores</p>
+
+    </div>
+
+    <div id="Porcoes" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Batata</b> <span class="w3-right w3-tag w3-red w3-round">R$20,00</span></h1>
+      <hr>
+
+      <h1><b>Batata com Queijo</b> <span class="w3-right w3-tag w3-red w3-round">R$25,00</span></h1>
+      <hr>
+
+      <h1><b>Batata com Cheddar e Bacon</b> <span class="w3-right w3-tag w3-red w3-round">R$25,00</span></h1>
+      <hr>
+
+      <h1><b>Polenta</b> <span class="w3-right w3-tag w3-red w3-round">R$15,00</span></h1>
+      <hr>
+
+      <h1><b>Mandioca</b> <span class="w3-right w3-tag w3-red w3-round">R$15,00</span></h1>
+    </div>
+
+
+    <div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Today's Soup</b> <span class="w3-right w3-tag w3-red w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+
+      <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-red w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-red w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+
+      <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-red w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Tomatoes and mozzarella</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- Contact (with google maps) -->
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contato</h1>
+    <p>Ligue e peça o seu pastel: (19) 3442 - 4085 / (19) 3442 - 6513</p>
+    <p></p>
+  </div>
+</div>
+
+<!-- sobre Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="sobre">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre</h1>
+    <p>O <strong>Catinho do Pastel</strong> possui um ambiente totalmente familiar e de facil acesso. Com produtos de qualidade, grande variedade e preços incríveis, a satisfação é garantida. Venha experimentar os nossos diversos sabores de pastés, lanches, porções e bebidas.</p>
+    <h1><b>Horário de funcionamento</b></h1>
+
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Segunda-feira & Terça-feira FECHADO</p>
+        <p>Quarta-feira 16:00 - 23:00</p>
+        <p>Quinta-feira 16:00 - 23:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Sexta-feira 16:00 - 23:00</p>
+        <p>Sábado 16:00 - 23:00</p>
+        <p>Domingo 16:00 - 23:00</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Google Maps -->
+<script>
+function myMap(){
+  myCenter = new google.maps.LatLng(-22.55752886756471, -47.445319470017296);
+  var mapOptions= {
+    center:myCenter,
+    zoom: 16, scrollwheel: true, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Menu selecionado
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-yellow", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-yellow";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjxSZZQgurYza4te6llrme3oBb6odAJws&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
